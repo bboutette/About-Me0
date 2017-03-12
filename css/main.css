@@ -1,0 +1,28 @@
+body {
+  background-image: url("../images/jellyfish.jpg");
+  background-size: cover;
+  font-family: 'Dosis', sans-serif;
+  color: white;
+}
+
+span: ;{
+  font-size: 3em;
+  font-weight: bold;
+}
+
+.columns {
+  display: flex;
+}
+
+.column {
+  margin: 10px;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 2;
+}
+
+.main-column {
+  flex-grow: 2;
+  flex-shrink: 2;
+  flex-basis: 0;
+}
