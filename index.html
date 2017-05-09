@@ -1,28 +1,202 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <link rel="StyleSheet" href="css/main.css">
-    <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
-    <title>Barbara Boutette</title>
-  </head>
-  <body>
-    <section class ="columns">
-      <div class ="main-column">Barbara Boutette</div>
-      <div class ="column">About Me</div>
-      <div class ="column">Blog</div>
-      <div class ="column">Contact Me</div>
-    </section>
 
-    <section>
-      <div class ="column">
-        <span>About me</span>
-        I haven't seen this day before is a song lyrics from one of my favorite bands. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+<head>
+  <meta charset="utf-8">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="StyleSheet" href="css/main.css">
+  <script type="text/javascript" src="main.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Raleway" rel="stylesheet">
+  <script async defer src="https://buttons.github.io/buttons.js"></script>
+  <title>Barbara Boutette</title>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div class="nav containers">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#">Barbara Boutette</a>
+        </div>
+        <div id="navbar">
+          <ul class="nav navbar-nav" style="border-style:none;">
+            <li class="active"><a href="#">Home</a></li>
+            <li class="active"><a href="#about">About</a></li>
+            <li><a href="https://medium.com/@bboutette">Blog</a></li>
+            <li><a href="mailto:bboutette@gmail.com">Contact</a></li>
+            <li>
+              <span class="linkedinWrapper">
+                <a href="https://www.linkedin.com/pub/barbara-boutette/138/243/431">
+                <span style="font: 80% Arial,sans-serif; color:#0783B6;"><img src="https://static.licdn.com/scds/common/u/img/webpromo/btn_in_20x15.png" width="20" height="15" alt="View Barbara Boutette's LinkedIn profile" style="vertical-align:middle;" border="0" border-radius="0">&nbsp;
+                </span>
+              </span>
+              </a>
+            </li>
+            <li>
+              <span class="githubWrapper">
+                <a class="github-button" href="https://github.com/bboutette" data-count-href="/bboutette/followers" data-count-api="/users/bboutette#followers" data-count-label="# followers on GitHub" label="Follow @bboutette on GitHub">Follow @bboutette</a>
+              </span>
+            </li>
+          </ul>
+        </div>
       </div>
-    </section>
+    </nav>
+  </header>
 
-    <section>
+    <img src="images/purple-flower.jpg" alt="purple flower" class="splash">
 
-    </section>
-  </body>
+    <div class = "container about-me" id="about">
+      <div class="row">
+        <div class="col-xs-12 col-md-6">
+          <img width="300" height="475" style="border-radius: 15px;" class="avatar" src="images/avatar.jpg">
+        </div>
+
+        <div class="col-xs-12 col-md-6 fadeIn">
+          <h1>About Me</h1>
+          <div class="about-me-text" style="border-radius:15px;
+          margin-bottom:20px;
+          padding-right:10px;
+          padding-left: 10px;
+          background-color:rgba(252, 217, 201, .35)">
+            For the last eight years, I have been working as a social worker, volunteering for different non-profits, and sometimes working as a musician.
+            It brought together two of my favorite activities: helping people and learning stuff. I am currently pursuing a Masters in Public Health from
+            George Washington University and also in a web development bootcamp at General Assembly.
+            I hope to help more people and make new friends with my new skills, perhaps through open source projects.
+            In my free time, I enjoy hiking with my boyfriend
+            and my dog, singing and playing music, coordinating <span style="font-weight:800px;"><a  href="https://www.meetup.com/Austin-Esperanto/">
+            The Austin Esperanto Club</a></span>, and learning to play Naruto from my son.
+          </div>
+        </div>
+
+        <div class="line" style="padding-top: 30px;">
+
+        </div>
+        <HR WIDTH="60%">
+        </div>
+
+      </div>
+    </div>
+    <!-- Carousel
+    ================================================== -->
+    <div id="myCarousel" class="container carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+        <li data-target="#myCarousel" data-slide-to="3"></li>
+        <li data-target="#myCarousel" data-slide-to="4"></li>
+        <li data-target="#myCarousel" data-slide-to="5"></li>
+      </ol>
+      <div class="carousel-inner">
+
+        <div class="item active">
+          <img src="images/dog-trail.jpg" alt="first slide" class="img-responsive">
+          <div class="header-text hidden-xs">
+            <div class="col-md-12 text-center ">
+              <h2>
+                <span style="font-family: 'Raleway', sans-serif;
+                font-weight: light 300;
+                color: #1e1c1c;">
+                  My dog and I on the trail.
+                </span>
+              </h2>
+            </div>
+          </div>
+        </div>
+
+        <div class="item center-img">
+          <img src="images/together2.jpg" alt="second slide" class="img-responsive">
+          <div class="header-text hidden-xs">
+            <div class="col-md-12 text-center">
+              <h2>
+                <span style="font-family: 'Raleway', sans-serif;
+                font-weight: light 300;
+                color: #1e1c1c;">
+                  Hiking a Hill Country trail.
+                </span>
+              </h2>
+            </div>
+          </div>
+        </div>
+
+        <div class="item center-img">
+          <img src="images/esperanto.jpg" alt="third slide" class="img-responsive">
+          <div class="header-text hidden-xs">
+            <div class="col-md-12 text-center">
+              <h2>
+                <span style="font-family: 'Raleway', sans-serif;
+                font-weight: light 300;
+                color: #1e1c1c;">
+                  Happy Esperanto Club Meeting.
+                </span>
+              </h2>
+            </div>
+          </div>
+        </div>
+
+        <div class="item center-img">
+          <img src="images/meandson.jpg" alt="fourth slide" class="img-responsive">
+          <div class="header-text hidden-xs">
+            <div class="col-md-12 text-center">
+              <h2>
+                <span style="font-family: 'Raleway', sans-serif;
+                font-weight: light 300;
+                color: #1e1c1c;">
+                  Fun times with my son.
+                </span>
+              </h2>
+            </div>
+          </div>
+        </div>
+
+        <div class="item center-img">
+          <img src="images/jacquie.jpg" alt="fifth slide" class="img-responsive">
+          <div class="header-text hidden-xs">
+            <div class="col-md-12 text-center">
+              <h2>
+                <span style="font-family: 'Raleway', sans-serif;
+                font-weight: light 300;
+                color: #1e1c1c;">
+                  Enjoying time with my friend, Jacquie.
+                </span>
+              </h2>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="item center-img">
+          <img src="images/dog-trail.jpg" alt="sixth slide" class="img-responsive">
+          <div class="header-text hidden-xs">
+            <div class="col-md-12 text-center">
+              <h2>
+                <span style="font-family: 'Raleway', sans-serif;
+                font-weight: light 300;
+                color: #1e1c1c;">
+                  My dog and I.
+                </span>
+              </h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+<!-- Add thumbnails below carousel and carousel text. -->
+
+    <div class="line">
+    <HR WIDTH="60%">
+    </div>
+    <div class="container projects">
+        <a href"#" class="animation">Projects</p></a>
+        <p id="hide">Under Construction</p>
+    </div>
+  <div class ="footer">
+    Copyright Barbara Boutette 2017
+  </div>
+</body>
+
 </html>
